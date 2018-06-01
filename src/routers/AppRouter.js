@@ -1,7 +1,7 @@
 import React from 'react';
 import {Router, Route, Switch, Link, NavLink} from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
-import DashboardPage from "../components/Dashboard";
+import AboutPage from "../components/About";
 import NotFoundPage from "../components/NotFound";
 import LoginPage from '../components/LoginPage';
 import PrivateRoute from './PrivateRoute';
@@ -20,8 +20,8 @@ const AppRouter = () => (
    />
 
    <PrivateRoute
-    path="/dashboard"
-    component={DashboardPage}
+    path="/about"
+    component={AboutPage}
    />
    <Route
 
