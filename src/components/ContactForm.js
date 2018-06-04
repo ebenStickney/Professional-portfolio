@@ -44,8 +44,9 @@ export default class ContactForm extends React.Component {
 
     render() {
         return (
+          <div>
+            <div className="contact-header"> Contact Me </div>
             <div className="content-container__row">
-            <div><h2>Contact Me</h2></div>
             <form className='form' onSubmit={this.onSubmit}>
             {this.state.error && <p className='form__error'>{this.state.error}</p>}
               <div>
@@ -94,6 +95,7 @@ export default class ContactForm extends React.Component {
               </div>
             </section>
           </div>
+        </div>
 
         )
     }

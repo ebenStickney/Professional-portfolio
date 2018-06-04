@@ -7,6 +7,7 @@ import Projects from "../components/Projects";
 import NotFoundPage from "../components/NotFound";
 import LoginPage from '../components/LoginPage';
 import Header from "../components/Header";
+import Welcome from '../components/Welcome';
 
 export const history = createHistory();
 
@@ -17,7 +18,7 @@ const AppRouter = () => (
   <Switch>
     <Route
     path="/"
-    component={LoginPage}
+    component={Welcome}
     exact={true}
    />
 

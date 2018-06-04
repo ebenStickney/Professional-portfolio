@@ -8,7 +8,7 @@ const AboutPage = () => (
 <div className="content-container">
  <h3 className="profile__header">Eben Stickney</h3>
  <img className='profile__pic' src='/images/profile-pic.jpg' />
-<p>
+<p className="about-me">
  I am a developer with an enthusiasm for and proficiency with
  building applications with React.  I can help with any project,
  whether it is a simple single page application, or something
