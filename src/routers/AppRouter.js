@@ -6,8 +6,6 @@ import ContactForm from "../components/ContactForm";
 import Projects from "../components/Projects";
 import NotFoundPage from "../components/NotFound";
 import LoginPage from '../components/LoginPage';
-import PrivateRoute from './PrivateRoute';
-import PublicRoute from './PublicRoute';
 import Header from "../components/Header";
 
 export const history = createHistory();
@@ -17,13 +15,13 @@ const AppRouter = () => (
  <div>
  <Header />
   <Switch>
-    <PublicRoute
+    <Route
     path="/"
     component={LoginPage}
     exact={true}
    />
 
-   <PrivateRoute
+   <Route
     path="/about"
     component={AboutPage}
    />

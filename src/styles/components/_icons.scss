@@ -1,0 +1,20 @@
+.icon {
+color: black;
+transition: color .3s ease;
+&:hover {
+  color: lighten(black, 40%);
+}
+
+}
+
+.icon__item {
+padding-bottom: $m-size;
+
+}
+
+.icon__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

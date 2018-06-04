@@ -44,38 +44,56 @@ export default class ContactForm extends React.Component {
 
     render() {
         return (
-            <div className="content-container">
-            <h2>Contact Me</h2>
+            <div className="content-container__row">
+            <div><h2>Contact Me</h2></div>
             <form className='form' onSubmit={this.onSubmit}>
             {this.state.error && <p className='form__error'>{this.state.error}</p>}
-              <input
-                className='text-input'
-                type="text"
-                placeholder="Email"
-                autoFocus
-                value={this.state.email}
-                onChange={this.onEmailChange}
-              />
-              <input
-                className='text-input'
-                type='text'
-                placeholder='Subject'
-                value={this.state.subject}
-                onChange={this.onSubjectChange}
-              />
-              <textarea
-                className='textarea'
-                placeholder="Add a note (optional)"
-                value={this.state.message}
-                onChange={this.onMessageChange}
-              >
-              </textarea>
               <div>
-                <button className='button'>Save Expense</button>
+                <p> * required field </p>
+                <input
+                  className='text-input'
+                  type="text"
+                  placeholder="Email*"
+                  autoFocus
+                  value={this.state.email}
+                  onChange={this.onEmailChange}
+                />
+                <input
+                  className='text-input'
+                  type='text'
+                  placeholder='Subject*'
+                  value={this.state.subject}
+                  onChange={this.onSubjectChange}
+                />
+               </div>
+                <textarea
+                  className='textarea'
+                  placeholder="Message*"
+                  value={this.state.message}
+                  onChange={this.onMessageChange}
+                >
+                </textarea>
+              <div>
+                <button className='button'>Send Message </button>
               </div>
 
             </form>
-            </div>
+            <section className="icon__section">
+
+              <div className="icon__item">
+                <a className="icon" href="https://www.linkedin.com/in/eben-stickney-28512417/" target="_blank">
+                  <i className="fab fa-linkedin-in fa-5x"></i>
+
+                </a>
+              </div>
+                <div className="icon__item">
+                <a className="icon" href="https://github.com/ebenStickney" target="_blank">
+                  <i className="fab fa-github fa-5x"></i>
+
+                </a>
+              </div>
+            </section>
+          </div>
 
         )
     }
