@@ -1,30 +1,48 @@
 import React from 'react';
+import ProjectItem from './ProjectItem';
 
 
 
 
-const Projects = () => (
 
-  <div className="gallery-container">
-    <div className="grid">
-      <div className="cell">
-        <h3> Expensify App </h3>
-        <a href="https://expense-app-react.herokuapp.com/">
-          <img src="/images/expensify-ss.png" className="responsive-image" />
-          
-        </a>
+
+
+
+
+
+class Projects extends React.Component {
+
+  state = {
+    modalIsOpen: false,
+  };
+
+  handleClick = () => {
+    this.setState( () => ({modalIsOpen: true}));
+  }
+
+  handleExit = () => {
+    this.setState( () => ({modalIsOpen: false}));
+  }
+
+  render() {
+    return (
+      <div>
+       <div className="gallery-container">
+         <ProjectItem
+          isModalOpen={this.state.modalIsOpen}
+          onClick={this.handleClick}
+          onHandleExit={this.handleExit}
+         />
+       </div>
       </div>
-      <div className="cell">
-        <h3> Breakout </h3>
-        <img src="/images/breakout-ss.png" className="responsive-image" />
-      </div>
-      <div className="cell">
-        <h3> Indecision App </h3>
-        <img src="/images/indecision-ss.png" className="responsive-image" />
-      </div>
-    </div>
-  </div>
 
-);
+    )
+  }
+};
+
+
+
+
+
 
 export default Projects;
