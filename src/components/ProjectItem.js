@@ -39,6 +39,7 @@ const ProjectItem = (props) => {
              <a
               href="#"
               onClick={props.onClick}
+
               >
                <img src={project.image} className="responsive-image" />
              </a>
@@ -46,7 +47,7 @@ const ProjectItem = (props) => {
               isModalOpen={props.isModalOpen}
               onHandleExit={props.onHandleExit}
 
-              />
+             />
             </div>
           );
            })
