@@ -7,11 +7,16 @@ const ProjectModal = (props) => (
     isOpen= {props.isModalOpen}
     contentLabel="Project Description"
     closeTimeoutMS={400}
+    className="modal"
   >
-    <h3> More Info </h3>
-    <p>{props.description}</p>
-    <button onClick={props.onHandleExit}>Go Back</button>
-  </Modal>
+      <div className="modal__body">
+      <h2 className="modal__title"> More Info </h2>
+      <p>sample text</p>
+      <img src={props.image} className="responsive-images"/>
+
+      <button className="button" onClick={props.onHandleExit}>Go Back</button>
+      </div>
+    </Modal>
 );
 
 export default ProjectModal;

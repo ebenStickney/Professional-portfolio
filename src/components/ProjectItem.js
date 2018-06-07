@@ -46,6 +46,7 @@ const ProjectItem = (props) => {
              <ProjectModal
               isModalOpen={props.isModalOpen}
               onHandleExit={props.onHandleExit}
+              image={project.image}
 
              />
             </div>
