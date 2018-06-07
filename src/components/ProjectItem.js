@@ -37,16 +37,12 @@ const ProjectItem = (props) => {
             <div key={project.name} className="cell">
              <h3>{project.name}</h3>
              <a
-              href="#"
+              href={project.link}
               onClick={props.onClick}
+              target="_blank"
               >
                <img src={project.image} className="responsive-image" />
              </a>
-             <ProjectModal
-              isModalOpen={props.isModalOpen}
-              onHandleExit={props.onHandleExit}
-
-              />
             </div>
           );
            })
