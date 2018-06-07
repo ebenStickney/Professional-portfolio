@@ -8,13 +8,13 @@ transition: color .3s ease;
 }
 
 .icon__item {
-padding-bottom: $m-size;
+padding: $m-size $l-size;
 
 }
 
 .icon__section {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }

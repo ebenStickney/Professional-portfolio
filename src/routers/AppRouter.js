@@ -2,7 +2,7 @@ import React from 'react';
 import {Router, Route, Switch, Link, NavLink} from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 import AboutPage from "../components/About";
-import ContactForm from "../components/ContactForm";
+import ContactPage from "../components/ContactForm";
 import Projects from "../components/Projects";
 import NotFoundPage from "../components/NotFound";
 import LoginPage from '../components/LoginPage';
@@ -32,7 +32,7 @@ const AppRouter = () => (
    />
    <Route
     path="/contact"
-    component={ContactForm}
+    component={ContactPage}
    />
    <Route
 
