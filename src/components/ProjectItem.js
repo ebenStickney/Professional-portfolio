@@ -15,7 +15,7 @@ const projectLinks = [
   },
   {
     name: "Indecision App",
-    link: "https://github.com/ebenStickney" ,
+    link: "https://jib-indecision.herokuapp.com/" ,
     image: "/images/indecision-ss.png",
     description: "A single-page app that helps you decide which task to do."
   }
@@ -36,7 +36,7 @@ const ProjectItem = (props) => {
             <div key={project.name} className={" cell cell" + index}>
                  <h3>{project.name}</h3>
                  <a
-                  href="#"
+                  href={project.link}
                   onClick={props.onClick}
                   >
                    <img src={project.image} className="responsive-image" />
