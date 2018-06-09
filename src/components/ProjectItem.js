@@ -1,5 +1,4 @@
 import React from 'react';
-import ProjectModal from './ProjectModal';
 
 const projectLinks = [
   {
@@ -30,20 +29,20 @@ const ProjectItem = (props) => {
 
   return (
 
-     <div className="grid">
+          <div className="grid">
              {
-               projectLinks.map((project) => {
+               projectLinks.map((project, index) => {
              return (
-            <div key={project.name} className="cell">
-             <h3>{project.name}</h3>
-             <a
-              href={project.link}
-              onClick={props.onClick}
-              target="_blank"
-              >
-               <img src={project.image} className="responsive-image" />
-             </a>
-            </div>
+            <div key={project.name} className={" cell cell" + index}>
+                 <h3>{project.name}</h3>
+                 <a
+                  href="#"
+                  onClick={props.onClick}
+                  >
+                   <img src={project.image} className="responsive-image" />
+                 </a>
+
+          </div>
           );
            })
          }

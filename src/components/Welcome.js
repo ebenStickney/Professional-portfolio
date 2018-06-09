@@ -1,10 +1,22 @@
 import React from 'react';
 
 
-const Welcome = () => (
+const Welcome = (props) => {
+  // const bgSrc = props.bgSrc;
+  const style = {
+    background: "url('/images/mt-fade-bg_edited_3.jpg')",
+    backgroundSize: "cover",
+    display: "flex",
+    width: '100vw',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+return (
   <div className="welcomePage">
-    <div className="content-container">
-      <img src="/images/logo-500.png" />
+    <div className="welcome-content">
+      <div className="logo">
+        <img src="/images/logo-500.png" />
+      </div>
       <h3 className="blurb"> Raised in Portland, Maine. <br />
            Inspired By Portland, Oregon.  <br />
            Elegant Design.  <br />
@@ -14,5 +26,6 @@ const Welcome = () => (
     </div>
   </div>
 )
+};
 
 export default Welcome;

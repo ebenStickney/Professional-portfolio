@@ -10,13 +10,14 @@ export const Header = ( {startLogout} ) => (
       <Link className='header__title' to="/">
         <img className="header__logo" src="/images/logo-150.png" />
       </Link>
-        <Link className='header__title' to="/about">
+        <h3 className= "main-title"> Jib Developers </h3>
+        <Link className='header__link' to="/about">
           <h4>About</h4>
         </Link>
-        <Link className='header__title' to="/projects">
+        <Link className='header__link' to="/projects">
           <h4>Projects</h4>
         </Link>
-        <Link className='header__title' to="/contact">
+        <Link className='header__link' to="/contact">
           <h4>Contact</h4>
         </Link>
 
