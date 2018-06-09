@@ -35,10 +35,7 @@ const ProjectItem = (props) => {
              return (
             <div key={project.name} className={" cell cell" + index}>
                  <h3>{project.name}</h3>
-                 <a
-                  href={project.link}
-                  onClick={props.onClick}
-                  >
+                 <a href={project.link} target="_blank">
                    <img src={project.image} className="responsive-image" />
                  </a>
 
