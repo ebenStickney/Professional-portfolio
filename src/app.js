@@ -38,17 +38,17 @@ ReactDOM.render(<LoadingPage />, document.getElementById('app'));
 
 
 
-firebase.auth().onAuthStateChanged((user) => {
-  if (user) {
-    store.dispatch(login(user.uid));
-    renderApp();
-    if(history.location.pathname === "/") {
-      history.push('/');
-    }
-  } else {
-    store.dispatch(logout());
-    renderApp();
-    history.push('/');
-  };
-});  //tells if the user authentication has changed, from authorized to un.
+// firebase.auth().onAuthStateChanged((user) => {
+//   if (user) {
+//     store.dispatch(login(user.uid));
+//     renderApp();
+//     if(history.location.pathname === "/") {
+//       history.push('/');
+//     }
+//   } else {
+//     store.dispatch(logout());
+//     renderApp();
+//     history.push('/');
+//   };
+// });  //tells if the user authentication has changed, from authorized to un.
 //For now just making sure that we are triggering auth correctly.
