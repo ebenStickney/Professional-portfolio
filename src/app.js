@@ -17,14 +17,14 @@ const state = store.getState();
 
 
 
-let hasRendered = false;
-
-const renderApp = () => {
-  if(!hasRendered) {
-    ReactDOM.render(jsx, document.getElementById('app'));
-    hasRendered = true;
-  }
-};
+// let hasRendered = false;
+//
+// const renderApp = () => {
+//   if(!hasRendered) {
+//     ReactDOM.render(jsx, document.getElementById('app'));
+//     hasRendered = true;
+//   }
+// };
 
 //component to render
 const jsx = (
@@ -34,7 +34,7 @@ const jsx = (
 );
 
 
-ReactDOM.render(<LoadingPage />, document.getElementById('app'));
+ReactDOM.render(jsx, document.getElementById('app'));
 
 
 
