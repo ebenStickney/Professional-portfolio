@@ -6,16 +6,38 @@
 .header__title {
   color: white;
   text-decoration: none;
-  h4 {
-    margin: 0;
-    font-family: $book;
+  align-self: flex-start;
+  margin-right: auto;
+
+}
+.main-title {
+  color: white;
+  font-family: $book;
+  margin: 0;
+  padding: 0 3px;
+  margin-right: 20%;
+  @media (max-width: $desktop-breakpoint) {
+    display: none;
   }
+
+
+}
+
+.header__link {
+  color: white;
+  text-decoration: none;
+  align-self: flex-end;
+  font-family: $book;
+  padding: 0 $m-size;
+  font-size: $font-size-large;
+  flex-shrink: 1;
 
 }
 
 .header__content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
   padding: $s-size 0;
 }

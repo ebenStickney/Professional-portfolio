@@ -12,9 +12,11 @@ const Welcome = (props) => {
     alignItems: 'center'
   }
 return (
-  <div className="welcomePage" style={style}>
-    <div className="content-container">
-      <img src="/images/logo-500.png" />
+  <div className="welcomePage">
+    <div className="welcome-content">
+      <div className="logo">
+        <img src="/images/logo-500.png" />
+      </div>
       <h3 className="blurb"> Raised in Portland, Maine. <br />
            Inspired By Portland, Oregon.  <br />
            Elegant Design.  <br />

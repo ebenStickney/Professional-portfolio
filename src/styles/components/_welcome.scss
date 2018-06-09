@@ -1,17 +1,53 @@
 .welcomePage {
-  // background: url('/images/mt-fade-bg.jpg');
+  background: url('/images/mt-fade-bg-dark.jpg');
   height: 100vh;
   display: flex;
+  flex-direction: column;
   width: 100vw;
   background-size: cover;
   justify-content: center;
   align-items: center;
+  transition: background 1.3s .3s cubic-bezier(1,.15,1,1.19),
+  background-size 1.3s .3s cubic-bezier(1,.15,1,1.19);
+  h3 {
+    margin: 0;
+    padding: 0 15px;
+    color: black;
+    text-align: center;
+    transition: color 1.3s cubic-bezier(1,.15,1,1.19);
+    @media (max-width: $desktop-breakpoint) {
+      color: $off-white;
+      padding-left: 25px;
+    }
+  }
+  &:hover {
+    background: url('/images/blue-mt.jpg');
+    background-size: cover;
+    h3 {
+      color: $off-white;
+      transition: color 1.5s .3 cubic-bezier(1,.15,1,1.19);
+    }
+  }
 
 }
 
-.blurb {
-  color: $off-white;
+h3 {
+  color: black;
   text-align: center;
   font-size: 3.5rem;
   font-family: $book;
+}
+
+.welcome-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  padding: 15px;
+  margin: 10px;
+  @media (max-width: $desktop-breakpoint) {
+    transform: scale(.9);
+
+  }
 }

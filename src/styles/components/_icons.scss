@@ -1,14 +1,43 @@
 .icon {
-color: black;
-transition: color .3s ease;
+  color: black;
+  transition: color .3s ease;
+  text-decoration: none;
+  transition:
+  opacity .1s ease-in,
+  color .1s ease-in,
+  transform .3s .1s ease-in;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
 &:hover {
-  color: $deep-red;
+  color: #3A6073;
+  transform: scale(1.1);
+}
+
+.icon__title {
+  opacity: 0;
+  transition: opacity .2 ease-in;
+  font-weight: bold;
+}
+
+@media (max-width: $desktop-breakpoint) {
+  color: $off-white;
 }
 
 }
 
 .icon__item {
 padding: $m-size $l-size;
+opacity: 0.1;
+transition: opacity .5s ease-in;
+margin-top: 10%;
+
+@media (max-width: $desktop-breakpoint) {
+  flex-direction: column;
+  opacity: 1;
+
+}
 
 }
 
@@ -17,4 +46,17 @@ padding: $m-size $l-size;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  transition: transform .4s ease-in;
+  &:hover {
+    transform: scale(1.2);
+  }
+  &:hover .icon__title {
+    opacity: 1;
+  }
+
+  @media (max-width: $desktop-breakpoint) {
+    flex-direction: column;
+
+  }
+
 }

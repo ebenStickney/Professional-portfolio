@@ -16,23 +16,12 @@ class Projects extends React.Component {
     modalIsOpen: false,
   };
 
-  handleClick = () => {
-    this.setState( () => ({modalIsOpen: true}));
-  }
-
-  handleExit = () => {
-    this.setState( () => ({modalIsOpen: false}));
-  }
 
   render() {
     return (
-      <div>
+      <div className="box-container">
        <div className="gallery-container">
-         <ProjectItem
-          isModalOpen={this.state.modalIsOpen}
-          onClick={this.handleClick}
-          onHandleExit={this.handleExit}
-         />
+         <ProjectItem />
        </div>
       </div>
 
