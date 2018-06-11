@@ -21,29 +21,21 @@
   font-weight: bold;
 }
 
-@media (max-width: $desktop-breakpoint) {
-  color: $off-white;
-}
+
 
 }
 
 .icon__item {
-padding: $m-size $l-size;
-opacity: 0.1;
+padding: $s-size;
+// opacity: 0.1;
 transition: opacity .5s ease-in;
-margin-top: 10%;
 
-@media (max-width: $desktop-breakpoint) {
-  flex-direction: column;
-  opacity: 1;
-
-}
 
 }
 
 .icon__section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: transform .4s ease-in;

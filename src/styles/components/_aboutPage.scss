@@ -54,6 +54,11 @@
 
 }
 
+.profile__split-2 {
+  display: flex;
+  flex-direction: row;
+}
+
 .about-me {
   font-size: $font-size-xlarge;
   font-family: $book;
