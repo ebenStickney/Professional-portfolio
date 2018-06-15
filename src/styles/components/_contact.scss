@@ -11,6 +11,17 @@
   }
 }
 
+.contact__section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact {
+  text-decoration: none;
+}
+
 .page-wrap {
   background: url('/images/mt-fade-bg_edited_2.jpg');
   background-size: 101%;

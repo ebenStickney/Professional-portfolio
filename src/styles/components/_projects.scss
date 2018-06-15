@@ -15,11 +15,12 @@
 
 .project {
   max-width: 100%;
-  padding: $l-size;
-  transition: transform .8s .1s linear;
-  position: relative;
+  padding: 0;
+  position: sticky;
+  top:101px;
+  align-self: flex-start;
+  height: auto;
   &:hover {
-    transform: scale(.8);
     .overlay-text {
       opacity: .8;
     }
@@ -52,7 +53,7 @@ img {
  color: black;
  font-size: $xl-size;
  position: absolute;
- top: 50%;
+ top: 20%;
  left: 50%;
  align-self: center;
  transform: translate(-50%, -50%);
@@ -63,7 +64,7 @@ img {
 .project-link {
   @extend .project-description;
   color: white;
-  top:80%;
+  top:50%;
 
 }
 
