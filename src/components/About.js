@@ -42,7 +42,7 @@ class AboutPage extends React.Component {
                 </div>
               </section>
               <input type="image" className='profile__pic' src={this.state.imgUrl} alt='Profile Picute' onClick={this.changePic} />
-
+            
             </div>
         </div>
 
