@@ -20,9 +20,11 @@ handleScroll = () => {
   this.setState(() => ({hasScrolled: true}));
   console.log(this.state.hasScrolled);
 }
+//tomorrow try passing style in as prop to header and use it conditionally.
  render() {
    const style = this.state.hasScrolled ?
-   {display: "block"} : {display: "none"};
+   {backgroundColor: "red"} : {backgroundColor: "blue"};
+   console.log(style);
 
    return (
      <div>
