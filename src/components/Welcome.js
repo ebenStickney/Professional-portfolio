@@ -12,9 +12,9 @@ componentDidMount() {
   console.log('mounted');
 }
 
-componentWillUnmount() {
+componentDidUpdate() {
   window.removeEventListener('scroll', this.handleScroll);
-  console.log('unmount');
+  console.log('update');
 }
 
 handleScroll = () => {
@@ -25,12 +25,18 @@ handleScroll = () => {
 //tomorrow try passing style in as prop to header and use it conditionally.
  render() {
    const style = this.state.hasScrolled ?
-   {backgroundColor: "red"} : {backgroundColor: "blue"};
+   {opacity: "1",
+
+  } :
+  {
+    opacity: "0",
+    backgroundColor: "transparent"
+  };
    console.log(style);
 
    return (
      <div>
-     <Header style={style}/>
+     <Header style={style} />
      <div className="welcomePage">
        <div className="welcome-content">
          <div className="logo">

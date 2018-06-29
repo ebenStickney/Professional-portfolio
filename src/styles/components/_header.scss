@@ -1,11 +1,13 @@
 .header {
-  background: $hazy-black;
+  background-color: transparent;
+  height: 150px;
   width: 100vw;
   z-index: 1;
   height: 100px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+   transition: opacity 1s linear .3s, height 1s linear .3s;
 }
 
 .header__title {

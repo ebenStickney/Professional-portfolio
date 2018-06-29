@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Header} from './Header';
 
 
 
@@ -17,6 +17,8 @@ class AboutPage extends React.Component {
 
   render() {
     return (
+      <div>
+        <Header />
       <div className="content-container__about">
         <div className="flex-item__main main1">
           <div className="profile__split">
@@ -42,7 +44,7 @@ class AboutPage extends React.Component {
                 </div>
               </section>
               <input type="image" className='profile__pic' src={this.state.imgUrl} alt='Profile Picute' onClick={this.changePic} />
-            
+
             </div>
         </div>
 
@@ -69,6 +71,7 @@ class AboutPage extends React.Component {
         }
           </p>
         </div>
+      </div>
       </div>
 
     )

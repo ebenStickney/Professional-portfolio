@@ -2,8 +2,8 @@ import React from 'react';
 import { Link  } from 'react-router-dom';
 
 
-export const Header = ( {startLogout} ) => (
-  <header className='header'>
+export const Header = ( {style} ) => (
+  <header className='header' style={style}>
     <div className='content-container__header'>
       <div className='header__content'>
       <Link className='header__title' to="/">
