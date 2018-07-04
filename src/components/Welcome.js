@@ -22,7 +22,9 @@ handleScroll = () => {
   this.setState(() => ({hasScrolled: true}));
   console.log(this.state.hasScrolled);
 }
-//tomorrow try passing style in as prop to header and use it conditionally.
+//tomorrow try passing style in as prop to header and use it conditionally.  That worked.
+//fuck with some scrollIntoView
+
  render() {
    const style = this.state.hasScrolled ?
    {opacity: "1",
@@ -36,7 +38,6 @@ handleScroll = () => {
 
    return (
      <div>
-     <Header style={style} />
      <div className="welcomePage">
        <div className="welcome-content">
          <div className="logo">
