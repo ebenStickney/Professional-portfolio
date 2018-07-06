@@ -1,5 +1,5 @@
 import React from 'react';
-import {Header} from './Header';
+
 
 
 
@@ -18,7 +18,6 @@ class AboutPage extends React.Component {
   render() {
     return (
       <div>
-        <Header />
       <div className="content-container__about">
         <div className="flex-item__main main1">
           <div className="profile__split">

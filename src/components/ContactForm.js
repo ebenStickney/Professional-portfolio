@@ -1,5 +1,5 @@
 import React from 'react';
-import {Header} from './Header';
+
 
 
 
@@ -16,7 +16,7 @@ class ContactPage extends React.Component {
   render() {
     return (
       <div className="page-wrap">
-        <Header />
+  
        <div className="content-container">
         <div>
           <h3  className="contact__header"> Need help creating your next idea?  Get in touch! </h3>

@@ -1,12 +1,11 @@
 .header {
-  background-color: transparent;
-  height: 150px;
+  background-color: black;
   width: 100vw;
   z-index: 1;
-  height: 100px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  height: 80px;
+  position: -webkit-fixed;
+  position: fixed;
+  bottom: 0;
    transition: opacity 1s linear .3s, height 1s linear .3s;
 }
 
@@ -38,15 +37,22 @@
   padding: 0 $m-size;
   font-size: $font-size-large;
   flex-shrink: 1;
+  text-decoration: none;
 
 }
 
 .header__content {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
-  padding: $s-size 0;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  li {
+    text-decoration: none;
+
+  }
 }
 
 .header__logo {
