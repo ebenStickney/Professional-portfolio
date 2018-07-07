@@ -17,13 +17,11 @@ class AboutPage extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="about-container">
+        <div className="buffer"></div>
       <div className="content-container__about">
         <div className="flex-item__main main1">
-          <div className="profile__split">
-            <h3 className="profile__header">Eben Stickney</h3>
-          </div>
-          <div className="profile__split-2">
+            <div className="profile__split-2">
               <section className="icon__section">
 
                 <div className="icon__item">
@@ -44,6 +42,9 @@ class AboutPage extends React.Component {
               </section>
               <input type="image" className='profile__pic' src={this.state.imgUrl} alt='Profile Picute' onClick={this.changePic} />
 
+            </div>
+            <div className="profile__split">
+              <h3 className="profile__header">Eben Stickney</h3>
             </div>
         </div>
 

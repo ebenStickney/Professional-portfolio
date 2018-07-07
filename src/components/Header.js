@@ -2,8 +2,8 @@ import React from 'react';
 import { Link  } from 'react-router-dom';
 
 
-export const Header = ( {style} ) => (
-  <header className='header' style={style}>
+export const Header = ( ) => (
+  <header className='header'>
     <div className='content-container__header'>
       <ul className='header__content'>
       <li className='header__title'>

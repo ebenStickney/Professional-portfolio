@@ -1,18 +1,20 @@
 .icon {
-  color: black;
+  color: $deep-red;
   transition: color .3s ease;
   text-decoration: none;
   transition:
   opacity .1s ease-in,
   color .1s ease-in,
-  transform .3s .1s ease-in;
+  transform .5s .1s ease-in;
   display: flex;
   flex-direction: column;
   text-align: center;
 
 &:hover {
-  color: #3A6073;
-  transform: scale(1.1);
+  color: $deep-red;
+  transform: scale(1.5) rotateZ(360deg);
+
+
 }
 
 .icon__title {
@@ -39,9 +41,7 @@ transition: opacity .5s ease-in;
   justify-content: center;
   align-items: center;
   transition: transform .4s ease-in;
-  &:hover {
-    transform: scale(1.2);
-  }
+
   &:hover .icon__title {
     opacity: 1;
   }
