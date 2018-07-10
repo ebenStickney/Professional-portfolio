@@ -135,12 +135,12 @@ h3 {
   0% {
     opacity: 0;
     transform: translateT(-8rem) scale(.8);
-    color: white;
+    color: black;
   }
   100% {
     opacity: 1;
     transform: none;
-    color: black;
+    color: white;
   }
 }
 

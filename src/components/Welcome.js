@@ -10,7 +10,7 @@ const Welcome = () => (
       <div className="logo">
         <img src="/images/black-logo-500.png" />
       </div>
-      <h3 className="h-2"> Elegant Web and Mobile Design </h3>
+      <h3 className="h-1"> Elegant Web and Mobile Design </h3>
     </div>
   </div>
 

@@ -1,5 +1,5 @@
 .icon {
-  color: #DA0808;
+  color: $deep-red;
   transition: color .3s ease;
   text-decoration: none;
   transition:
@@ -11,7 +11,7 @@
   text-align: center;
 
 &:hover {
-  color: $deep-red;
+  color: #DA0808;
   transform: scale(1.5) rotateZ(360deg);
 
 
