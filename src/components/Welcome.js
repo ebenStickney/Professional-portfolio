@@ -4,7 +4,7 @@ import React from 'react';
 
 const Welcome = () => (
 
-  <div className="welcomePage">
+  <div id="welcome" className="welcomePage">
     <div className="welcome-content">
       <h3 className="h-1"> Jib Developers </h3>
       <div className="logo">

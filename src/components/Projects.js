@@ -23,57 +23,45 @@ const projectLinks = [
 ];
 
 const Projects = () => (
-
-  <div className="container">
-    <div className='project project__expensify'>
-      <img src="/images/expensify-ss-lg.png" alt="Expense App" />
-      <div className="overlay-text">
-        <p className="project-description">
-          An app built to help the user keep track of and manage
-          their expenses.
-        </p>
-        <a
-          href="https://expense-app-react.herokuapp.com/"
-          className="button project-link"
-          target="_blank"
-          >
-            Check It Out
-        </a>
-      </div>
+<div id="projects" className="projects-container">
+  <div className="project">
+    <div className="project__info">
+      <h2>Expensify App</h2>
+      <h3>An Web Application that helps users manage their finances.</h3>
+      <a href="https://expense-app-react.herokuapp.com/" target="_blank">
+        <p>Check It Out</p>
+      </a>
     </div>
-    <div className='project project__breakout'>
-      <img src="/images/breakout-ss-lg.png" alt="Breakout App" />
-      <div className="overlay-text">
-        <p className="project-description">
-          The classic brick-breaking game.
-          Created with only JS, and HTML canvas
-        </p>
-        <a
-          href="https://ebenstickney.github.io/Breakout/"
-          className="button project-link"
-          target="_blank"
-          >
-            Check It Out
-        </a>
-      </div>
-    </div>
-    <div className='project project__indecision'>
-      <img src="/images/indecision-ss-lg.png" alt="Indecision App" />
-      <div className="overlay-text">
-        <p className="project-description">
-          A single-page app that helps the user pick a task from a
-          to-do list.
-        </p>
-        <a
-          href="https://jib-indecision.herokuapp.com/"
-          className="button project-link"
-          target="_blank"
-          >
-            Check It Out
-        </a>
-      </div>
+    <div className="project__image">
+      <img src="/images/expensify-ss.png" alt="expensity App" />
     </div>
   </div>
+  <div className="project">
+    <div className="project__image">
+      <img src="/images/indecision-ss.png" alt="expensity App" />
+    </div>
+    <div className="project__info">
+      <h2>Indecision App</h2>
+      <h3>A single-page app that helps you decide which task to do.</h3>
+      <a href="https://jib-indecision.herokuapp.com/" target="_blank">
+        <p>Check It Out</p>
+      </a>
+    </div>
+  </div>
+  <div className="project">
+    <div className="project__info">
+      <h2>Breakout</h2>
+      <h3>The classic Brickbreaking game.</h3>
+      <a href="https://ebenstickney.github.io/Breakout/" target="_blank">
+        <p>Check It Out</p>
+      </a>
+    </div>
+    <div className="project__image">
+      <img src="/images/breakout-ss.png" alt="expensity App" />
+    </div>
+  </div>
+</div>
+
 );
 
 

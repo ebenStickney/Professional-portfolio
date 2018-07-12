@@ -17,8 +17,7 @@ class AboutPage extends React.Component {
 
   render() {
     return (
-      <div className="about-container">
-        <div className="buffer"></div>
+      <div id="about" className="about-container">
       <div className="content-container__about">
         <div className="flex-item__main main1">
             <div className="profile__split-2">
@@ -49,8 +48,6 @@ class AboutPage extends React.Component {
         </div>
 
 
-        <div className="flex-item__main">
-        </div>
         <div className="flex-item__main main2">
           <p className="about-me">
           I moved to Montana to create and manage the content of a digital media website,

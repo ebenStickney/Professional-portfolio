@@ -12,10 +12,6 @@
 }
 
 .about-container {
-  background: url('/images/flip.jpg');
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center center;
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -49,11 +45,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items:flex-end;
-  position: sticky;
-  top: 0;
-  @media (max-width: $desktop-breakpoint) {
-    position: static;
-  }
 }
 
 .profile__pic {
@@ -77,6 +68,7 @@
 .profile__split-2 {
   display: flex;
   flex-direction: row;
+  padding-top: 50px;
 }
 
 .about-me {

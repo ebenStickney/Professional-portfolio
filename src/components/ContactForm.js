@@ -15,8 +15,8 @@ class ContactPage extends React.Component {
 
   render() {
     return (
-      <div className="page-wrap">
-  
+      <div id="contact" className="page-wrap">
+
        <div className="content-container">
         <div>
           <h3  className="contact__header"> Need help creating your next idea?  Get in touch! </h3>

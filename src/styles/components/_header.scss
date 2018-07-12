@@ -50,7 +50,13 @@
   list-style-type: none;
   margin: 0;
   li {
-    text-decoration: none;
+
+    a {
+      text-decoration: none;
+      color: white;
+
+    }
+
 
   }
 }
