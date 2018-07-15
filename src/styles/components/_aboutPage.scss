@@ -1,3 +1,11 @@
+.about-container {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: auto;
+}
+
+
 .content-container__about {
   height: 100%;
   width: 100%;
@@ -6,23 +14,13 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  @media (max-width: $desktop-breakpoint) {
+  @media (max-width: $tablet-breakpoint) {
     flex-direction: column;
   }
 
 }
 
-.about-container {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-}
 
-.buffer {
-  width: 100%;
-  height: 100px;
-}
 
 
 .flex-item-pic {
@@ -37,7 +35,11 @@
 .flex-item__main.main1 {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
+  @media (max-width: $tablet-breakpoint) {
+    width: 100%;
+  }
 
 }
 
@@ -53,18 +55,9 @@
   border: 2px solid black;
   align-self: flex-end;
   padding: 5px;
-  margin: 5px 0 20px 20px;
+  margin: 25px 5px 20px 20px;
 }
 
-.profile__header {
-  font-size: $font-size-xlheader;
-  flex-grow: 1;
-  text-align: center;
-  align-self: flex-end;
-  color: black;
-
-
-}
 
 .profile__split-2 {
   display: flex;
@@ -74,6 +67,8 @@
 
 .about-me {
   font-size: $font-size-xlarge;
+  width: 100%;
+  height: 100%;
   font-family: $book;
   color: black;
   justify-content: center;
@@ -84,4 +79,9 @@
   @media (max-width: $desktop-breakpoint) {
     margin-top: 10px;
   }
+}
+.about-me__pic {
+  @extend .about-me;
+  padding: 0;
+  margin: 0;
 }

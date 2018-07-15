@@ -39,12 +39,13 @@ class AboutPage extends React.Component {
                   </a>
                 </div>
               </section>
-              <input type="image" className='profile__pic' src={this.state.imgUrl} alt='Profile Picute' onClick={this.changePic} />
+              <section>
+                <input type="image" className='profile__pic' src={this.state.imgUrl} alt='Profile Picute' onClick={this.changePic} />
+              </section>
+
 
             </div>
-            <div className="profile__split">
-              <h3 className="profile__header">Eben Stickney</h3>
-            </div>
+
         </div>
 
 

@@ -46,12 +46,9 @@ transition: opacity .5s ease-in;
     opacity: 1;
   }
 
-  @media (max-width: $desktop-breakpoint) {
-    flex-direction: column;
-
-  }
 
 }
+
 
 .icon__section__contact {
 @extend .icon__section;

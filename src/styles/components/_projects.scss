@@ -17,10 +17,16 @@
 
 .project {
   display: flex;
+  max-width: 100%;
   flex-direction: row;
   justify-content: space-between;
   margin: $xl-size 0;
   padding: $m-size;
+}
+@media screen and (max-width:$mobile-breakpoint) {
+  .project {
+    flex-direction: column;
+  }
 }
 
 // Text layout
