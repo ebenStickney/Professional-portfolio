@@ -12,7 +12,7 @@
 
 &:hover {
   color: #DA0808;
-  transform: scale(1.5) rotateZ(360deg);
+  transform: scale(1.1);
 
 
 }
@@ -51,4 +51,13 @@ transition: opacity .5s ease-in;
 
   }
 
+}
+
+.icon__section__contact {
+@extend .icon__section;
+  flex-direction: row;
+  margin-top: $xl-size;
+  &:hover {
+    transform: scale(1.1);
+  }
 }

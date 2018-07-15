@@ -7,13 +7,18 @@
   flex-direction: column;
   justify-content: center;
   background: linear-gradient(to top white, black 90%);
+  align-items: center;
+    h1 {
+      font-size: $font-size-header;
+      font-family: $syncopate;
+    }
 
 };
 
 .project {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: $xl-size 0;
   padding: $m-size;
 }
@@ -25,7 +30,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 $s-size;
+  margin: 0 $l-size;
   h2  {
     text-align: center;
   }
@@ -56,5 +61,11 @@
 
 .project__image {
   margin: 0;
+  img {
+    -webkit-box-shadow: 4px 4px 4px #666;
+    box-shadow: 4px 4px 4px #666;
+    -moz-box-shadow: 4px 4px 4px #666;
+  }
+
 
 }

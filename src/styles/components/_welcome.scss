@@ -14,9 +14,9 @@
 h3 {
   margin: 0;
   padding: 0 15px;
-  color: white;
+  color: black;
   font-size: 3rem;
-  font-family: $corben;
+  font-family: $syncopate;
   text-align: center;
   opacity: 0;
   text-shadow: 3px 3px 4px #222;
@@ -138,12 +138,12 @@ h3 {
   0% {
     opacity: 0;
     transform: translateT(-8rem) scale(.8);
-    color: black;
+    color: white;
   }
   100% {
     opacity: 1;
     transform: none;
-    color: white;
+    color: $hazy-black;
   }
 }
 

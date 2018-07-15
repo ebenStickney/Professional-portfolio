@@ -16,18 +16,9 @@
   margin-right: auto;
 
 }
-.main-title {
-  color: white;
-  font-family: $book;
-  margin: 0;
-  padding: 0 3px;
-  margin-right: 20%;
-  @media (max-width: $desktop-breakpoint) {
-    display: none;
-  }
 
 
-}
+
 
 .header__link {
   color: white;

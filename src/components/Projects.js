@@ -24,6 +24,7 @@ const projectLinks = [
 
 const Projects = () => (
 <div id="projects" className="projects-container">
+  <h1> <i className="fas fa-code"></i> Projects </h1>
   <div className="project">
     <div className="project__info">
       <h2>Expensify App</h2>
@@ -33,12 +34,12 @@ const Projects = () => (
       </a>
     </div>
     <div className="project__image">
-      <img src="/images/expensify-ss.png" alt="expensity App" />
+      <img src="/images/expensify-ss-mock.jpg" alt="expensity App" />
     </div>
   </div>
   <div className="project">
     <div className="project__image">
-      <img src="/images/indecision-ss.png" alt="expensity App" />
+      <img src="/images/indecision-ss-mock.jpg" alt="expensity App" />
     </div>
     <div className="project__info">
       <h2>Indecision App</h2>
@@ -57,7 +58,7 @@ const Projects = () => (
       </a>
     </div>
     <div className="project__image">
-      <img src="/images/breakout-ss.png" alt="expensity App" />
+      <img src="/images/breakout-ss-mock.png" alt="expensity App" />
     </div>
   </div>
 </div>

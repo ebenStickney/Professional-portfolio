@@ -21,18 +21,29 @@ class ContactPage extends React.Component {
         <div>
           <h3  className="contact__header"> Need help creating your next idea?  Get in touch! </h3>
         </div>
-          <section className="contact__section">
-            <div className="contact phone" onClick={this.handleClick}>
-              <i className="fas fa-mobile-alt fa-5x"></i>
-            </div>
+        <section className="icon__section__contact">
 
-            <div className="contact__button">
-              <a className=" contact email" href="mailto:ebenstickney@gmail.com?subject=WeBDeV" target="_blank">
-                <i className="fas fa-envelope fa-5x"></i>
-                <span className="icon__title"> Email </span>
-              </a>
-            </div>
-          </section>
+          <div className="icon__item">
+            <a className="icon" href="https://www.linkedin.com/in/eben-stickney-28512417/" target="_blank">
+              <i className="fab fa-linkedin fa-5x"></i>
+            </a>
+          </div>
+            <div className="icon__item">
+            <a className="icon" href="https://github.com/ebenStickney" target="_blank">
+              <i className="fab fa-github-square fa-5x"></i>
+            </a>
+          </div>
+          <div className="icon__item">
+            <a className="icon" href="https://twitter.com/ebenstickney" target="_blank">
+              <i className="fab fa-twitter-square fa-5x"></i>
+            </a>
+          </div>
+          <div className="icon__item">
+            <a className="icon" href="mailto:ebenstickney@gmail.com?subject=WeBDeV" target="_blank">
+              <i className="fas fa-envelope fa-5x"></i>
+            </a>
+          </div>
+        </section>
         </div>
       </div>
     )};
