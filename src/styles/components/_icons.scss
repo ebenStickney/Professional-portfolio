@@ -23,10 +23,9 @@
 }
 .icon__item {
 padding: $s-size;
-opacity: 0.1;
 transition: opacity .5s ease-in;
 @media screen and (max-width: $tablet-breakpoint) {
-opacity: 1;  
+opacity: 1;
 }
 
 }

@@ -7,10 +7,11 @@
   padding: $m-size 0;
   text-shadow: 3px 3px 4px #222;
   margin: 0 auto;
-  transition: color 2s .1s ease;
+  transition: color 2s .1s ease, text-shadow 2s .1s ease;
   @media (max-width: $tablet-breakpoint) {
     color: $off-white;
     padding: $m-size;
+
   }
 }
 
@@ -36,6 +37,7 @@
     background-position: top;
     h3 {
       color:$off-white;
+      text-shadow: 3px 3px 4px black;
     }
     .icon__item {
       opacity: 1;
@@ -52,7 +54,7 @@
 .phone-message {
   max-width: 100%;
   text-align: center;
-  font-size: $font-size-large;
+  font-size: $font-size-xlarge;
   color: white;
   font-family: $marker;
   text-shadow: 3px 3px 4px #222;
