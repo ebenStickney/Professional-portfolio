@@ -1,3 +1,35 @@
+
+
+.page-wrap {
+  background: url('/images/mt-fade-bg_edited_2.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+
+
+  transition: background-position 1s .5s ease;
+  &:hover {
+    background-position: top;
+    h3 {
+      color:$off-white;
+      text-shadow: 3px 3px 4px black;
+    }
+    .icon__item {
+      opacity: 1;
+    }
+  }
+  @media (max-width: $tablet-breakpoint) {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+}
+
+.contact-container{
+  padding-bottom: 50px;
+}
+
 .contact__header {
   color: black;
   text-align: center;
@@ -26,31 +58,6 @@
   text-decoration: none;
 }
 
-.page-wrap {
-  background: url('/images/mt-fade-bg_edited_2.jpg');
-  background-size: 101%;
-  background-position: center;
-  width: 100vw;
-  height: 100vh;
-  transition: background-position 1s .5s ease;
-  &:hover {
-    background-position: top;
-    h3 {
-      color:$off-white;
-      text-shadow: 3px 3px 4px black;
-    }
-    .icon__item {
-      opacity: 1;
-    }
-  }
-  @media (max-width: $desktop-breakpoint) {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-
-  }
-}
-
 .phone-message {
   max-width: 100%;
   text-align: center;
@@ -59,4 +66,7 @@
   font-family: $marker;
   text-shadow: 3px 3px 4px #222;
   padding: $m-size;
+    @media (max-width: $tablet-breakpoint) {
+      font-size: $font-size-large;
+    }
 }

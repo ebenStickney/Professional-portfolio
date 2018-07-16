@@ -16,6 +16,8 @@ class ContactPage extends React.Component {
   render() {
     return (
       <div id="contact" className="page-wrap">
+        <div className="contact-container">
+
         <div>
           <h3  className="contact__header"> Need help creating your next idea?  Get in touch! </h3>
         </div>
@@ -46,6 +48,7 @@ class ContactPage extends React.Component {
           this.state.hasClicked && <p className="phone-message">Emails are checked frequently, but if you must get in touch, you can reach me at: (207) 329-1226</p>
         }
       </div>
+    </div>
     )};
 };
 

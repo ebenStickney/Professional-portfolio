@@ -29,7 +29,9 @@
   font-size: $font-size-large;
   flex-shrink: 1;
   text-decoration: none;
-
+  @media (max-width: $tablet-breakpoint) {
+    padding: 0 $s-size;
+  }
 }
 
 .header__content {
