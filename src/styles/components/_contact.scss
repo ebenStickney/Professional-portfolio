@@ -1,13 +1,16 @@
 .contact__header {
   color: black;
   text-align: center;
+  font-family: $marker;
   font-weight: 700;
   font-size: $font-size-header;
   padding: $m-size 0;
+  text-shadow: 3px 3px 4px #222;
   margin: 0 auto;
   transition: color 2s .1s ease;
-  @media (max-width: $desktop-breakpoint) {
+  @media (max-width: $tablet-breakpoint) {
     color: $off-white;
+    padding: $m-size;
   }
 }
 
@@ -44,4 +47,14 @@
     background-position: bottom;
 
   }
+}
+
+.phone-message {
+  max-width: 100%;
+  text-align: center;
+  font-size: $font-size-large;
+  color: white;
+  font-family: $marker;
+  text-shadow: 3px 3px 4px #222;
+  padding: $m-size;
 }
