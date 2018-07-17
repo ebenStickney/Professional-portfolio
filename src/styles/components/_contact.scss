@@ -23,10 +23,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+    min-height: 100vh;
+    max-height: auto;
   }
 }
 
 .contact-container{
+  width: 100%;
+  height: auto;
   padding-bottom: 50px;
 }
 
@@ -60,6 +64,7 @@
 
 .phone-message {
   max-width: 100%;
+  max-height: 100%;
   text-align: center;
   font-size: $font-size-xlarge;
   color: white;
