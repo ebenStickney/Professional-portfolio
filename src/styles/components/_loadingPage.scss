@@ -1,0 +1,19 @@
+.loading-div {
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 250px;
+  height: 200px;
+}
+
+.loading-text {
+  font-size: $font-size-large;
+  font-family: $marker;
+  
+}

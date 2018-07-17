@@ -34,7 +34,7 @@ class ContactPage extends React.Component {
             </a>
           </div>
           <div className="icon__item">
-            <a className="icon" href="mailto:ebenstickney@gmail.com?subject=Web_Design" target="_blank">
+            <a className="icon" href="mailto:eben@jibdevelopers.com?subject=Web_Design" target="_blank">
               <i className="fas fa-envelope-square fa-5x"></i>
             </a>
           </div>

@@ -4,6 +4,7 @@
   width: 100vw;
   margin: 0;
   padding: 0;
+  z-index: -1;
   transform: translateY(-4rem);
   display: flex;
   flex-direction: row;
@@ -13,12 +14,6 @@
   animation: bg-slide 4s cubic-bezier(0,.5,0,.99) forwards;
 
   }
-
-@media screen and (max-width: $tablet-breakpoint) {
-
-};
-
-
 
 
   h3.h-1 {

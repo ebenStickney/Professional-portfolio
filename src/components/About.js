@@ -50,26 +50,40 @@ class AboutPage extends React.Component {
 
 
         <div className="flex-item__main main2">
+          <h4 className="about-header">_Who I am_</h4>
+
+            {this.state.imgUrl === '/images/profile-pic.jpg'?
+              <p className="about-me">
+                My name is Eben Stickney.  I am a Front End Web Developer who loves design,
+                and building applications with React.  Born and raised in Portland, Maine.
+                Now residing in Portland, Oregon.  (Message me if you would like me to tell you which
+                Portland I like more!) <br /><br />
+                BUT WHATEVER YOU DO, DON’T CLICK ON MY PICTURE!!
+              </p>
+                :
+                <p className="about-me">
+                  My name is Eben Stickney.  I am a Front End Web Developer who loves design,
+                  and building applications with React.  Born and raised in Portland, Maine.
+                  Now residing in Portland, Oregon.  (Message me if you would like me to tell you which
+                  Portland I like more!) <br /><br />
+                  ...Well, this is embarrassing.  Maybe click on it again, before people start staring.
+                </p>
+          }
+
+          <h4 className="about-header">_What I know_</h4>
           <p className="about-me">
-          I moved to Montana to create and manage the content of a digital media website,
-          with a focus on original weekly comedy podcasts.
-          We were hilarious.  As the site’s design needed tweaks,
-          I started learning basic programming to do the job myself. I found I had a nack for it.
-          However, opportunities came about that required me to put my new coding skills aside,
-          and expand my culinary skills, which eventually drove me to Portland’s food scene.
-          Yet, my love of programming never went away, and now I am back in it 100% and ready to solve
-          all of Portland’s (and beyond) programming needs, one line of code at a time.
-          <br />
-          <br />
-          From website design, to app functionality, I am ready to help out wherever I can.
-          Check me out my projects to see what I have done in the past, or go to my contact page to get in touch.
-          {this.state.imgUrl === '/images/profile-pic.jpg'?
-          <p> BUT WHATEVER YOU DO, DON’T CLICK ON MY PICTURE!! </p> :
-          <p> ...Well, this is embarrassing.  Maybe click on it again, before people start staring.</p>
-        }
+            HTML5, CSS3, ES6, React, Redux, MySQL, Node.js, Git, Bootstrap, Responsive Design, Webpack, Babel, Jest, Express
           </p>
+
+          <h4 className="about-header">_What This Means For You_</h4>
+          <p className="about-me">
+            I can help build, update and design your website, or help you create the next big app!
+            Even if you are not sure exactly what you are looking for, let's have a chat and see if I can be
+            of service!
+          </p>
+
+          </div>
         </div>
-      </div>
       </div>
 
     )

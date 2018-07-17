@@ -47,16 +47,4 @@ class App extends React.Component {
 
 
 
-
-
-
-
-//component to render
-const jsx = (
-
-    <AppRouter />
-
-);
-
-
 ReactDOM.render(<App />, document.getElementById('app'));
